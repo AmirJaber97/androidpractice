@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Number"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:id="@+id/ll_numbers_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_num2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Number"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_activity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_numbers_holder"
+            android:layout_centerHorizontal="true"
+            android:text="Activity 1"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_activity1"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b_open_activity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="open Activity 2" />
+
+        <Button
+            android:id="@+id/b_open_activityParcelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_open_activity2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="open Activity Parcelable" />
+
+        <LinearLayout
+            android:id="@+id/ll_buttons_holder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_open_activityParcelable"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_open_activity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="open Activity 3" />
+
+            <Button
+                android:id="@+id/b_open_activity4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="open Activity 4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/b_open_mvvm_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_buttons_holder2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="open Activity MVVM" />
+
+        <Button
+            android:id="@+id/b_open_bottom_nav_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b_open_mvvm_activity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="open Activity Bottom Nav" />
+
+    </RelativeLayout>
+</ScrollView>

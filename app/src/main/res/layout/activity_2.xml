@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_num_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_activity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_buttons_holder"
+            android:layout_centerHorizontal="true"
+            android:text="Activity 2"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_buttons_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num_preview"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b_add"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/b_subtract"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Substract" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tv_activity2" />
+
+        <FrameLayout
+            android:id="@+id/fl_container_2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/fl_container" />
+
+        <Button
+            android:id="@+id/to_shared_vm_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pass data between fragments with shared view model"
+            android:layout_below="@id/fl_container_2"/>
+    </RelativeLayout>
+
+</ScrollView>

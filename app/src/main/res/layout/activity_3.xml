@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TIME"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="0"
+        android:textSize="60sp" />
+
+
+    <TextView
+        android:id="@+id/tv_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_counter"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_random"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="10:00"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b_start_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timer"
+        android:layout_centerHorizontal="true"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/b_stop_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_start_timer"
+        android:layout_centerHorizontal="true"
+        android:text="STOP" />
+
+</RelativeLayout>
