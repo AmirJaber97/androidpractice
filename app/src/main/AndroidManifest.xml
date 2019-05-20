@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".BottomNavActivity"></activity>
+        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".StartQuizActivity" />
+        <activity android:name=".BottomNavActivity" />
         <activity android:name=".SharedViewModelActivity" />
         <activity
             android:name=".AddEditNoteActivity"

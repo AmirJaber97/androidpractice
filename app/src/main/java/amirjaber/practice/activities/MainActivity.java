@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_NUMBER = "amirjaber.practice.activities.EXTRA_NUMBER";
 
 
-    private Button bOpenActivity2, bOpenActivityParcelable, bOpenActivity3, bOpenActivity4, bOpenActivityMvvm, bOpenActivityBottomNav;
+    private Button bOpenActivity2, bOpenActivityParcelable, bOpenActivity3, bOpenActivity4, bOpenActivityMvvm, bOpenActivityBottomNav, bOpenActivityQuiz;
     private EditText etName, etNumber, etNum1, etNum2;
     private TextView resultText;
 
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         bOpenActivity4 = findViewById(R.id.b_open_activity4);
         bOpenActivityMvvm = findViewById(R.id.b_open_mvvm_activity);
         bOpenActivityBottomNav = findViewById(R.id.b_open_bottom_nav_activity);
+        bOpenActivityQuiz = findViewById(R.id.b_open_quiz_activity);
 
         setListeners();
     }
@@ -83,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
         });
         bOpenActivityBottomNav.setOnClickListener(v -> {
             Intent goToActivity = new Intent(getApplicationContext(), BottomNavActivity.class);
+            startActivity(goToActivity);
+        });
+        bOpenActivityQuiz.setOnClickListener(v -> {
+            Intent goToActivity = new Intent(getApplicationContext(), StartQuizActivity.class);
             startActivity(goToActivity);
         });
     }
